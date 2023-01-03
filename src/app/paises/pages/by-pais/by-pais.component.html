@@ -9,6 +9,15 @@
        placeholder="Buscar por país"></app-pais-input>
     </div>
 </div>
+<ul class="list-group">
+    <li
+       *ngFor="let pais of paisesSugueridos" class="list-group-item list-group-item-action">
+      
+       <a class="nav-link" [routerLink]="['/pais', pais.cca2]">
+        {{ pais.name.official }}
+       </a>
+    </li>
+</ul>
 <hr>
 <div  *ngIf="hayError" 
     class="alert alert-danger">
