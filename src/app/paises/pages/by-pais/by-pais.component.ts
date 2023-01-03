@@ -5,7 +5,6 @@ import { Country } from '../../interfaces/pais.interface';
 @Component({
   selector: 'app-by-pais',
   templateUrl: './by-pais.component.html',
-  styleUrls: ['./by-pais.component.css']
 })
 export class ByPaisComponent {
 
